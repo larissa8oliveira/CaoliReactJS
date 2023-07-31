@@ -93,9 +93,16 @@ const Carrinho = ({ carrinho, setCarrinho }) => {
             <Link to="/" className="btn btn-outline-success btn-lg">
               Ver Mais Produtos
             </Link>
-            <Link to="/fimcompra"className="btn btn-danger btn-lg ms-2 mt-xs-3">
+            <Link
+              to={{
+                pathname: '/fimcompra',
+                state: { total: calcularTotal() },
+              }}
+              className="btn btn-danger btn-lg ms-2 mt-xs-3"
+            >
               Fechar Compra
             </Link>
+
           </div>
         </li>
       </ul>

@@ -42,6 +42,7 @@ const Cadastro = () => {
   };
 
   return (
+  
     <div className="container">
     <form className="mt-3" onSubmit={handleSubmit}>
       <div className="row">

@@ -13,6 +13,8 @@ import produtos from './utils/ProdutosData';
 import Login from './components/Login/Login';
 import FimCompra from './components/FimCompra/FimCompra ';
 import ContactForm from './components/Contato/Contato';
+import PrivacyPolicy from './components/Privasidade/Privasidade';
+import Troca from './components/Troca/Troca';
 
 function App() {
   const [carrinho, setCarrinho] = useState([]);
@@ -34,6 +36,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/fimcompra" element={<FimCompra />} />
           <Route path="/contato" element={<ContactForm/>} />
+          <Route path="/privacidade" element={<PrivacyPolicy/>} />
+          <Route path="/troca" element={<Troca/>} />
         </Routes>
         <Routes>
           {/* Renderizar o ProductCard somente na página inicial e no carrinho */}

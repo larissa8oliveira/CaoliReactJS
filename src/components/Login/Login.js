@@ -7,6 +7,7 @@ const Login = () => {
   };
 
   return (
+   <div className="flex-fill">
     <div className="container">
       <div className="row justify-content-center">
         <form className="col-sm-10 col-md-8 col-lg-6">
@@ -39,6 +40,7 @@ const Login = () => {
 
         </form>
       </div>
+    </div>
     </div>
   );
 };
